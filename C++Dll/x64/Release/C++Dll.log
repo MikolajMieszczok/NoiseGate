@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\miesz\Downloads\JASol (2)\JASol\C++Dll\dllmain.cpp(5,17): warning C4273: 'ngfun': inconsistent dll linkage
+C:\Users\miesz\Downloads\JASol (2)\JASol\C++Dll\cfun.h(8,26): message : see previous definition of 'ngfun'
+     Creating library C:\Users\miesz\Downloads\JASol (2)\JASol\x64\Release\C++Dll.lib and object C:\Users\miesz\Downloads\JASol (2)\JASol\x64\Release\C++Dll.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  C++Dll.vcxproj -> C:\Users\miesz\Downloads\JASol (2)\JASol\x64\Release\C++Dll.dll

@@ -1,0 +1,13 @@
+﻿  JAApp.cpp
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\funkcje.h(7,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(21,27): warning C4273: 'ngfun': inconsistent dll linkage
+C:\Users\miesz\Downloads\JASol (2)\JASol\C++Dll\cfun.h(8,26): message : see previous definition of 'ngfun'
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(202,38): warning C4566: character represented by universal-character-name '\u017C' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(202,38): warning C4566: character represented by universal-character-name '\u0107' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(202,38): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(208,34): warning C4566: character represented by universal-character-name '\u0144' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(231,38): warning C4566: character represented by universal-character-name '\u017C' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(231,38): warning C4566: character represented by universal-character-name '\u0107' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(231,38): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
+C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\JAApp.cpp(237,34): warning C4566: character represented by universal-character-name '\u0144' cannot be represented in the current code page (1252)
+  JAApp.vcxproj -> C:\Users\miesz\Downloads\JASol (2)\JASol\x64\Debug\JAApp.exe

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\programs\sndfile-concat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\programs\common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\programs\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2D741E8B-F69A-39DF-A47E-FC03737A6FEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F9F1B9CE-A738-3ADD-A876-FE11FC5478B0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

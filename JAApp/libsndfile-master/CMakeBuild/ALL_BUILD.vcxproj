@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{31331C04-F665-3D31-B373-1061AA5624EB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master" "-BC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild" --check-stamp-file "C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.31\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindSQLite3.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Templates\CPackConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\TestInline.c;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCXXCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeRCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeSystem.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CMakeAutoGen.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindFLAC.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOgg.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOpus.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindSpeex.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindVorbis.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmp3lame.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmpg123.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileChecks.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestLargeFiles.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\sndfile.pc.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\src\config.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master" "-BC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild" --check-stamp-file "C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.31\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindSQLite3.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Templates\CPackConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\TestInline.c;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCXXCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeRCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeSystem.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CMakeAutoGen.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindFLAC.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOgg.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOpus.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindSpeex.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindVorbis.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmp3lame.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmpg123.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileChecks.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestLargeFiles.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\sndfile.pc.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\src\config.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master" "-BC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild" --check-stamp-file "C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.31\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindSQLite3.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Templates\CPackConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\TestInline.c;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCXXCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeRCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeSystem.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CMakeAutoGen.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindFLAC.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOgg.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOpus.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindSpeex.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindVorbis.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmp3lame.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmpg123.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileChecks.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestLargeFiles.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\sndfile.pc.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\src\config.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master" "-BC:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild" --check-stamp-file "C:/Users/miesz/Downloads/JASol (2)/JASol/JAApp/libsndfile-master/CMakeBuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.31\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindSQLite3.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Templates\CPackConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\TestInline.c;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeCXXCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeRCCompiler.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\3.31.0-rc3\CMakeSystem.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CMakeAutoGen.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\CheckCPUArch.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindFLAC.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOgg.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindOpus.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindSpeex.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\FindVorbis.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmp3lame.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\Findmpg123.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileChecks.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\SndFileConfig.cmake.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.c.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestInline.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\cmake\TestLargeFiles.cmake;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\sndfile.pc.in;C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\src\config.h.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\ZERO_CHECK.vcxproj">
+      <Project>{79488821-0228-31B8-B750-7741BBBCB963}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\aiff_rw_test.vcxproj">
+      <Project>{86F96DE0-4003-3CA3-9525-285BC8E3B265}</Project>
+      <Name>aiff_rw_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\alaw_test.vcxproj">
+      <Project>{7616C7D7-C202-3BB4-B013-18844C848351}</Project>
+      <Name>alaw_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\channel_test.vcxproj">
+      <Project>{50D46F92-15F3-361B-8DE4-000D4D10DB6C}</Project>
+      <Name>channel_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\checksum_test.vcxproj">
+      <Project>{824A9163-C48F-3FC2-A161-A2B92BBD5B20}</Project>
+      <Name>checksum_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\chunk_test.vcxproj">
+      <Project>{EB2E4165-429B-3EDA-82E8-FD9BB3C5CA1E}</Project>
+      <Name>chunk_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\command_test.vcxproj">
+      <Project>{E51D50CA-8CFE-339A-8405-E0CD8D10EE23}</Project>
+      <Name>command_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\compression_size_test.vcxproj">
+      <Project>{929175EE-31CE-3BCA-AD6C-FDDDC3D12475}</Project>
+      <Name>compression_size_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\cpp_test.vcxproj">
+      <Project>{E8863BC0-9ABE-305A-9E36-B7236DD9C17E}</Project>
+      <Name>cpp_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\dwvw_test.vcxproj">
+      <Project>{59487D73-668E-32C2-9905-B7AE8EE76DCD}</Project>
+      <Name>dwvw_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\error_test.vcxproj">
+      <Project>{30D7ABDA-4AEA-3630-A9F7-58BCBFF5F15A}</Project>
+      <Name>error_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\external_libs_test.vcxproj">
+      <Project>{9D30AA6B-AA73-3C53-9E5F-369A6F7ED9C8}</Project>
+      <Name>external_libs_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\floating_point_test.vcxproj">
+      <Project>{863320DA-76BF-33BD-A9D1-6C80F6C03877}</Project>
+      <Name>floating_point_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\format_check_test.vcxproj">
+      <Project>{3687C601-32E6-33B4-90A9-F26AD588017F}</Project>
+      <Name>format_check_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\g72x_test.vcxproj">
+      <Project>{79D78505-5576-3FAF-8706-B93377A76DE9}</Project>
+      <Name>g72x_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\generate.vcxproj">
+      <Project>{1F82617E-2077-339E-B98A-68FC56C0FC09}</Project>
+      <Name>generate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\header_test.vcxproj">
+      <Project>{CCFB4D38-6BDE-32DD-A3B6-EADE454A65BF}</Project>
+      <Name>header_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\headerless_test.vcxproj">
+      <Project>{AA0B857A-7559-351C-B23B-601BFAA513A1}</Project>
+      <Name>headerless_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\list_formats.vcxproj">
+      <Project>{9FEFE3EF-4EB7-313E-A812-0B032348E6FF}</Project>
+      <Name>list_formats</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\locale_test.vcxproj">
+      <Project>{87E5BB8E-FE0C-35B4-BDC9-EACCAA4DAAAE}</Project>
+      <Name>locale_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\long_read_write_test.vcxproj">
+      <Project>{97F6AFAB-9295-35DD-B1DE-BF946B5E918C}</Project>
+      <Name>long_read_write_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\lossy_comp_test.vcxproj">
+      <Project>{CE59D21E-3FFD-3DB8-9595-0B778786E919}</Project>
+      <Name>lossy_comp_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\make_sine.vcxproj">
+      <Project>{244BBDF5-C34B-37A9-8F1E-16C5D6B67480}</Project>
+      <Name>make_sine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\misc_test.vcxproj">
+      <Project>{41F7CEED-000C-3CE7-A5D8-DA762BB60952}</Project>
+      <Name>misc_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\mpeg_test.vcxproj">
+      <Project>{9F9158A1-14C6-3276-A41A-EF914D56F89B}</Project>
+      <Name>mpeg_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\multi_file_test.vcxproj">
+      <Project>{1A7CF613-656A-3626-9E8D-681956439C09}</Project>
+      <Name>multi_file_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\ogg_opus_test.vcxproj">
+      <Project>{C11161C1-961D-36DE-9D11-C333F83779FC}</Project>
+      <Name>ogg_opus_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\ogg_test.vcxproj">
+      <Project>{3E045291-D620-3C5E-B40E-D97EB6089468}</Project>
+      <Name>ogg_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\pcm_test.vcxproj">
+      <Project>{D7C3FBBB-B1C7-3B10-BB9A-61F4AB5BAD31}</Project>
+      <Name>pcm_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\peak_chunk_test.vcxproj">
+      <Project>{F0D88E1C-9D30-3012-BA4A-16DAEB4C9C59}</Project>
+      <Name>peak_chunk_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\pipe_test.vcxproj">
+      <Project>{35DCF99C-49FC-3C78-B474-95D7B14A65E4}</Project>
+      <Name>pipe_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\raw_test.vcxproj">
+      <Project>{3C064BA4-FFB5-3AA3-B4EE-596D23B3C313}</Project>
+      <Name>raw_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\rdwr_test.vcxproj">
+      <Project>{A5234776-32CD-37FD-B691-EABA048B1243}</Project>
+      <Name>rdwr_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\scale_clip_test.vcxproj">
+      <Project>{93E241FD-D96C-326F-AA61-E31A509A1B04}</Project>
+      <Name>scale_clip_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sfprocess.vcxproj">
+      <Project>{5651C378-0E65-3CAE-83B0-61D9250DA708}</Project>
+      <Name>sfprocess</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sfversion.vcxproj">
+      <Project>{A25A742C-6C80-3BCB-AD23-82B2F4D79016}</Project>
+      <Name>sfversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile.vcxproj">
+      <Project>{690BC924-8F04-331E-9D24-28CAD0F5F770}</Project>
+      <Name>sndfile</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-cmp.vcxproj">
+      <Project>{8E33C4FA-7E95-32F2-B2F0-924FBFA49282}</Project>
+      <Name>sndfile-cmp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-concat.vcxproj">
+      <Project>{C7DE215A-F1DD-3CEF-8E16-B6BDAEEF8C20}</Project>
+      <Name>sndfile-concat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-convert.vcxproj">
+      <Project>{827869FC-B0BD-3733-AE64-40D4B07A7AD3}</Project>
+      <Name>sndfile-convert</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-deinterleave.vcxproj">
+      <Project>{3B669014-B4C5-3EB2-B47D-2BCC02EFB050}</Project>
+      <Name>sndfile-deinterleave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-info.vcxproj">
+      <Project>{F9E3AC0D-89CA-32FB-950E-A2310C49350F}</Project>
+      <Name>sndfile-info</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-interleave.vcxproj">
+      <Project>{A94B99BC-94EE-3C0B-A2AD-B97673AD1924}</Project>
+      <Name>sndfile-interleave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-loopify.vcxproj">
+      <Project>{5D70E345-1988-3C56-B21B-F050B5984F1A}</Project>
+      <Name>sndfile-loopify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-metadata-get.vcxproj">
+      <Project>{DC8EEEDD-B72B-333C-9220-88ADC2C31FA8}</Project>
+      <Name>sndfile-metadata-get</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-metadata-set.vcxproj">
+      <Project>{3B9CF0AD-34E8-3D55-9A33-ABD11A6AD25B}</Project>
+      <Name>sndfile-metadata-set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-play.vcxproj">
+      <Project>{5A142621-EBF4-3FDC-AEA6-7E7DE337F6E1}</Project>
+      <Name>sndfile-play</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-salvage.vcxproj">
+      <Project>{21AEEF3A-B641-3664-A2C3-0930E7F4D54D}</Project>
+      <Name>sndfile-salvage</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfile-to-text.vcxproj">
+      <Project>{93F1CBD9-AF00-3018-B111-86FD1FADCA8D}</Project>
+      <Name>sndfile-to-text</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\sndfilehandle.vcxproj">
+      <Project>{B71412AD-AA74-3514-9EA1-59B3344A2994}</Project>
+      <Name>sndfilehandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\stdin_test.vcxproj">
+      <Project>{9CD2A34D-B8F8-39AA-82D9-345A2EBCFB63}</Project>
+      <Name>stdin_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\stdio_test.vcxproj">
+      <Project>{9B9C4E9C-FC19-311C-B353-F23E457C1327}</Project>
+      <Name>stdio_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\stdout_test.vcxproj">
+      <Project>{E5A8930B-3A79-32B6-AC29-8423990B4B20}</Project>
+      <Name>stdout_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\string_test.vcxproj">
+      <Project>{6F08BFF2-DD20-3E9E-9512-F4E266FDCF6A}</Project>
+      <Name>string_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\test_main.vcxproj">
+      <Project>{5DE10C1D-387E-301D-83E7-18A1A1D1CB45}</Project>
+      <Name>test_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\test_utils.vcxproj">
+      <Project>{2014BB9C-2E8C-3A34-BC91-C4C6F76BA8C7}</Project>
+      <Name>test_utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\ulaw_test.vcxproj">
+      <Project>{F6F5D6CB-0992-3D9B-B22F-0F4F563D2798}</Project>
+      <Name>ulaw_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\virtual_io_test.vcxproj">
+      <Project>{E00EE26D-F832-3962-B1B4-AC95EBB8CB4A}</Project>
+      <Name>virtual_io_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\miesz\Downloads\JASol (2)\JASol\JAApp\libsndfile-master\CMakeBuild\write_read_test.vcxproj">
+      <Project>{D4E84418-5BE1-360C-B544-69C67ECB3049}</Project>
+      <Name>write_read_test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
